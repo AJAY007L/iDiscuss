@@ -21,7 +21,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       $sql = "SELECT category_name, category_id FROM `categories1` LIMIT 3";
       $result = mysqli_query($con, $sql); 
       while($row = mysqli_fetch_assoc($result)){
-        echo '<a class="dropdown-item" href="threadlist.php?catid='. $row['category_id']. '">' . $row['category_name']. '</a>'; 
+        echo '<a class="dropdown-item" href="threadlist.php?catid=' . $row['category_id'] . '">' . $row['category_name']. '</a>'; 
       }        
       echo '</div>
     </li>

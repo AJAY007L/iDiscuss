@@ -28,7 +28,6 @@
         $catname = $row['category_name'];
         $catdesc = $row['category_desc'];
     }
-    
     ?>
 
     <?php
